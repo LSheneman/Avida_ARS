@@ -1,0 +1,141 @@
+# Thu Apr 17 07:48:32 2014
+# Filename........: archive/120-aatgg.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 120.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 120
+# Copied Size.....: 120
+# Executed Size...: 120
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+dec
+get-head
+inc
+sub
+IO
+IO
+pop
+if-resources
+set-flow
+inc
+inc
+sense-resource0
+sense-pheromone
+push
+add
+h-search
+sense-pheromone-faced
+sense-resource0
+inc
+if-resources
+phero-on
+sense-faced-resource0
+donate-res-to-deme
+nop-B
+swap-stk
+move
+exploit
+nop-A
+sub
+IO
+donate-res-to-deme
+push
+mov-head
+explore
+phero-on
+donate-res-to-deme
+move
+h-search
+set-flow
+swap-stk
+nop-A
+move
+swap
+jmp-head
+nop-B
+swap
+if-n-equ
+mov-head
+swap-stk
+donate-res-to-deme
+nop-B
+tumble
+sense-resource0
+get-head
+shift-r
+mov-head
+mov-head
+phero-off
+pop
+jmp-head
+if-resources
+sub
+rotate-r
+rotate-l
+sense-pheromone-faced
+h-search
+if-resources
+nop-A
+set-flow
+nand
+set-flow
+rotate-l
+IO
+tumble
+if-less
+donate-res-to-deme
+shift-r
+IO
+if-n-equ
+inc
+nop-C
+dec
+rotate-r
+tumble
+swap
+swap
+nop-A
+move
+tumble
+sense-pheromone
+explore
+phero-on
+nop-C
+phero-off
+sense-pheromone-faced
+rotate-r
+swap-stk
+IO
+swap
+phero-on
+sense-faced-resource0
+nop-B
+get-head
+donate-res-to-deme
+set-flow
+if-pheromone
+move
+if-resources
+sense-faced-resource0
+if-label
+phero-off
+nop-B
+swap
+if-resources
+shift-r
+get-head
+rotate-r
+inc
+donate-res-to-deme
+set-flow

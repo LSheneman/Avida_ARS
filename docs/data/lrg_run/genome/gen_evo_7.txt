@@ -1,0 +1,145 @@
+# Thu Apr 17 02:14:03 2014
+# Filename........: archive/124-aafyn.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 124.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 124
+# Copied Size.....: 124
+# Executed Size...: 124
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+phero-on
+dec
+phero-on
+if-resources
+sense-pheromone
+nop-C
+shift-r
+sub
+set-flow
+IO
+sense-pheromone
+nop-B
+sub
+inc
+if-resources
+move
+if-label
+if-n-equ
+dec
+if-label
+add
+phero-on
+if-not-pheromone
+sense-resource0
+push
+phero-off
+shift-l
+if-resources
+donate-res-to-deme
+nop-C
+nand
+push
+tumble
+nop-C
+explore
+sense-pheromone
+sense-pheromone-faced
+nop-A
+rotate-l
+nop-B
+if-not-pheromone
+nop-A
+explore
+shift-r
+exploit
+if-label
+move
+swap-stk
+nop-B
+exploit
+tumble
+rotate-l
+dec
+sense-resource0
+jmp-head
+if-label
+IO
+shift-l
+mov-head
+get-head
+swap-stk
+add
+if-not-pheromone
+shift-l
+dec
+get-head
+push
+swap
+sense-faced-resource0
+rotate-l
+tumble
+if-not-pheromone
+swap
+rotate-l
+nop-A
+sense-pheromone-faced
+pop
+swap
+sub
+nop-C
+rotate-r
+push
+phero-on
+nop-B
+dec
+explore
+rotate-l
+sense-faced-resource0
+shift-l
+set-flow
+h-search
+swap
+inc
+explore
+if-n-equ
+nand
+if-pheromone
+get-head
+sub
+swap
+sense-pheromone
+donate-res-to-deme
+tumble
+pop
+if-resources
+sub
+shift-r
+nop-A
+if-pheromone
+shift-r
+donate-res-to-deme
+add
+phero-off
+rotate-r
+exploit
+sense-pheromone-faced
+if-not-pheromone
+set-flow
+move
+rotate-r
+move
+nand
+nand
+sense-resource0

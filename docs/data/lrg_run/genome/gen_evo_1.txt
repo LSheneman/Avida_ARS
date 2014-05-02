@@ -1,0 +1,129 @@
+# Tue Apr 15 21:48:33 2014
+# Filename........: archive/108-abeoa.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 108.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 108
+# Copied Size.....: 108
+# Executed Size...: 108
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+if-n-equ
+get-head
+exploit
+tumble
+if-label
+if-label
+get-head
+nand
+if-label
+tumble
+if-less
+move
+exploit
+sense-pheromone-faced
+get-head
+if-less
+dec
+explore
+inc
+shift-r
+phero-off
+rotate-r
+tumble
+nop-A
+inc
+h-search
+if-n-equ
+donate-res-to-deme
+jmp-head
+swap-stk
+IO
+swap-stk
+sense-resource0
+sense-faced-resource0
+sense-faced-resource0
+sense-resource0
+inc
+nop-A
+if-less
+phero-off
+if-label
+nop-B
+donate-res-to-deme
+move
+if-resources
+phero-on
+jmp-head
+explore
+if-n-equ
+phero-off
+nand
+IO
+sub
+exploit
+IO
+donate-res-to-deme
+if-resources
+pop
+nop-C
+rotate-l
+sense-pheromone-faced
+sub
+shift-r
+mov-head
+tumble
+shift-l
+pop
+pop
+swap-stk
+if-label
+h-search
+phero-off
+swap
+inc
+phero-off
+sense-pheromone-faced
+shift-r
+rotate-r
+nand
+phero-on
+rotate-r
+dec
+shift-r
+inc
+rotate-l
+rotate-r
+jmp-head
+if-n-equ
+shift-r
+sense-pheromone
+sense-faced-resource0
+phero-off
+shift-l
+phero-off
+move
+swap
+if-less
+tumble
+sub
+tumble
+swap
+h-search
+pop
+jmp-head
+if-resources
+swap-stk
+sense-faced-resource0
+shift-l

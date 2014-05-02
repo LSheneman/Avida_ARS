@@ -1,0 +1,146 @@
+# Mon Apr  7 11:08:24 2014
+# Filename........: archive/125-abqsi.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 125.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 125
+# Copied Size.....: 125
+# Executed Size...: 125
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+swap-stk
+shift-l
+move
+if-resources
+IO
+tumble
+if-not-pheromone
+inc
+swap-stk
+if-less
+add
+sense-pheromone-faced
+push
+h-search
+sense-resource0
+phero-on
+if-resources
+exploit
+nop-C
+if-label
+nop-A
+nop-C
+rotate-l
+sense-faced-resource0
+if-label
+phero-off
+exploit
+IO
+exploit
+IO
+if-less
+rotate-l
+donate-res-to-deme
+sense-faced-resource0
+move
+mov-head
+shift-r
+pop
+IO
+phero-on
+pop
+jmp-head
+phero-off
+add
+nop-B
+pop
+sub
+get-head
+swap-stk
+set-flow
+nop-C
+nop-A
+if-not-pheromone
+if-label
+sub
+inc
+shift-r
+swap
+sub
+nop-C
+mov-head
+shift-l
+if-resources
+push
+jmp-head
+if-n-equ
+if-label
+explore
+shift-l
+if-pheromone
+if-n-equ
+tumble
+if-resources
+jmp-head
+tumble
+rotate-l
+move
+if-not-pheromone
+donate-res-to-deme
+tumble
+add
+nop-B
+push
+if-not-pheromone
+mov-head
+if-less
+pop
+if-pheromone
+swap-stk
+get-head
+nop-C
+nop-B
+tumble
+nop-A
+set-flow
+nop-A
+sense-faced-resource0
+if-n-equ
+if-n-equ
+sense-pheromone-faced
+sub
+IO
+inc
+sense-resource0
+h-search
+nand
+if-resources
+push
+explore
+if-n-equ
+set-flow
+exploit
+IO
+nop-C
+jmp-head
+swap-stk
+inc
+get-head
+shift-r
+phero-off
+sense-pheromone-faced
+push
+IO
+phero-on
+tumble

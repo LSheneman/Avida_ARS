@@ -1,0 +1,143 @@
+# Mon Apr  7 07:19:22 2014
+# Filename........: archive/122-acfnf.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 122.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 122
+# Copied Size.....: 122
+# Executed Size...: 122
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+phero-on
+h-search
+if-less
+jmp-head
+h-search
+nop-C
+rotate-r
+sub
+mov-head
+swap-stk
+set-flow
+set-flow
+rotate-l
+dec
+move
+shift-l
+exploit
+explore
+inc
+phero-off
+sense-pheromone
+nop-B
+h-search
+if-n-equ
+get-head
+tumble
+sub
+push
+sub
+tumble
+donate-res-to-deme
+nop-C
+set-flow
+phero-on
+nand
+if-label
+sense-faced-resource0
+set-flow
+donate-res-to-deme
+nop-B
+tumble
+if-label
+sense-faced-resource0
+push
+if-label
+swap-stk
+mov-head
+phero-off
+jmp-head
+swap
+set-flow
+nand
+if-resources
+if-less
+rotate-l
+sense-faced-resource0
+nop-B
+swap
+phero-on
+move
+get-head
+shift-l
+if-pheromone
+sense-pheromone
+shift-r
+tumble
+get-head
+get-head
+swap
+sense-pheromone
+phero-off
+pop
+sense-resource0
+h-search
+if-n-equ
+swap
+exploit
+nop-C
+rotate-l
+inc
+push
+nop-B
+mov-head
+nop-C
+nop-B
+push
+nop-C
+nop-C
+swap-stk
+h-search
+h-search
+mov-head
+tumble
+if-label
+if-less
+mov-head
+swap-stk
+nop-A
+phero-off
+exploit
+move
+if-resources
+phero-on
+exploit
+IO
+donate-res-to-deme
+mov-head
+rotate-l
+donate-res-to-deme
+add
+exploit
+IO
+phero-off
+IO
+nop-A
+exploit
+exploit
+push
+rotate-l
+tumble
+sense-pheromone-faced
+if-pheromone

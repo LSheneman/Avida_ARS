@@ -1,0 +1,139 @@
+# Mon Apr  7 11:11:45 2014
+# Filename........: archive/118-acban.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 118.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 118
+# Copied Size.....: 118
+# Executed Size...: 118
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+nop-A
+if-pheromone
+sense-resource0
+get-head
+set-flow
+IO
+pop
+rotate-l
+jmp-head
+nop-A
+tumble
+if-not-pheromone
+nop-C
+phero-off
+sense-faced-resource0
+sense-pheromone-faced
+shift-l
+phero-off
+IO
+explore
+IO
+phero-off
+get-head
+swap-stk
+sense-resource0
+inc
+nand
+if-n-equ
+jmp-head
+if-label
+rotate-l
+push
+explore
+if-pheromone
+move
+mov-head
+donate-res-to-deme
+phero-off
+shift-l
+add
+h-search
+move
+inc
+explore
+if-n-equ
+if-n-equ
+sub
+inc
+sub
+exploit
+sense-resource0
+nand
+shift-l
+add
+nop-B
+swap-stk
+add
+if-not-pheromone
+sense-pheromone
+rotate-l
+if-not-pheromone
+sense-faced-resource0
+IO
+exploit
+jmp-head
+get-head
+rotate-r
+sense-pheromone
+move
+if-not-pheromone
+if-resources
+swap-stk
+pop
+if-less
+push
+swap-stk
+rotate-r
+shift-r
+rotate-r
+exploit
+nand
+donate-res-to-deme
+if-n-equ
+exploit
+sense-faced-resource0
+nand
+sense-faced-resource0
+get-head
+IO
+get-head
+exploit
+shift-r
+if-resources
+phero-on
+IO
+set-flow
+exploit
+IO
+if-pheromone
+donate-res-to-deme
+swap
+phero-off
+move
+shift-r
+shift-r
+mov-head
+move
+explore
+IO
+sense-resource0
+swap-stk
+if-n-equ
+if-n-equ
+IO
+h-search
+sense-resource0
+explore
+jmp-head

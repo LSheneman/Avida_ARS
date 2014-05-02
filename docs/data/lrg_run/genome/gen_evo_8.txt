@@ -1,0 +1,142 @@
+# Tue Apr 15 21:56:04 2014
+# Filename........: archive/121-aawup.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 121.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 121
+# Copied Size.....: 121
+# Executed Size...: 121
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+if-pheromone
+jmp-head
+nand
+push
+sense-resource0
+inc
+swap
+nop-A
+get-head
+exploit
+pop
+if-not-pheromone
+tumble
+if-pheromone
+move
+tumble
+phero-on
+shift-r
+donate-res-to-deme
+rotate-r
+tumble
+shift-l
+if-pheromone
+if-label
+if-resources
+pop
+if-not-pheromone
+if-n-equ
+sense-pheromone
+sense-faced-resource0
+rotate-r
+shift-l
+sense-resource0
+shift-r
+sense-faced-resource0
+shift-l
+sense-resource0
+if-not-pheromone
+phero-on
+shift-l
+if-less
+if-resources
+if-pheromone
+phero-off
+sense-pheromone-faced
+rotate-r
+tumble
+sense-pheromone
+set-flow
+if-n-equ
+phero-on
+h-search
+if-n-equ
+push
+pop
+sense-faced-resource0
+if-pheromone
+swap-stk
+nand
+rotate-l
+if-label
+nop-C
+get-head
+get-head
+nop-C
+if-less
+h-search
+jmp-head
+dec
+explore
+if-less
+jmp-head
+move
+nop-B
+dec
+rotate-r
+nand
+nand
+sense-pheromone-faced
+nand
+set-flow
+shift-r
+sense-pheromone
+rotate-l
+swap-stk
+nop-B
+if-not-pheromone
+nop-A
+push
+swap
+explore
+dec
+sense-pheromone
+inc
+nop-A
+get-head
+if-less
+sense-pheromone
+donate-res-to-deme
+inc
+get-head
+shift-l
+add
+push
+shift-l
+rotate-r
+h-search
+donate-res-to-deme
+push
+IO
+nop-A
+explore
+if-resources
+IO
+donate-res-to-deme
+move
+mov-head
+jmp-head
+explore
+swap
+inc

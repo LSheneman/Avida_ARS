@@ -1,0 +1,161 @@
+# Tue Apr  8 01:16:53 2014
+# Filename........: archive/140-aauhm.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 140.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 140
+# Copied Size.....: 140
+# Executed Size...: 140
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+dec
+sense-pheromone
+if-less
+sense-faced-resource0
+move
+IO
+exploit
+set-flow
+phero-on
+get-head
+if-resources
+move
+nop-B
+IO
+add
+IO
+get-head
+if-label
+nop-B
+inc
+phero-off
+h-search
+nand
+inc
+nop-B
+pop
+get-head
+sense-pheromone
+get-head
+sense-pheromone
+sense-resource0
+move
+move
+rotate-l
+inc
+sense-resource0
+swap
+set-flow
+nop-A
+push
+move
+h-search
+explore
+exploit
+nop-B
+rotate-l
+push
+h-search
+set-flow
+swap
+shift-l
+rotate-l
+nop-A
+nop-A
+get-head
+donate-res-to-deme
+nop-C
+if-n-equ
+sense-faced-resource0
+sense-resource0
+jmp-head
+set-flow
+if-resources
+IO
+if-less
+explore
+sense-resource0
+if-pheromone
+if-not-pheromone
+swap
+set-flow
+sense-resource0
+jmp-head
+dec
+donate-res-to-deme
+nop-A
+add
+add
+nop-A
+if-not-pheromone
+if-less
+nop-B
+mov-head
+IO
+nop-A
+if-label
+donate-res-to-deme
+mov-head
+nop-C
+phero-on
+tumble
+inc
+dec
+rotate-r
+rotate-l
+pop
+rotate-r
+shift-l
+tumble
+if-less
+sense-pheromone-faced
+nop-A
+if-n-equ
+exploit
+sense-pheromone-faced
+mov-head
+sense-pheromone-faced
+get-head
+h-search
+set-flow
+if-not-pheromone
+nop-A
+tumble
+rotate-l
+swap
+nop-C
+rotate-r
+if-label
+if-n-equ
+h-search
+swap
+sub
+inc
+exploit
+phero-off
+exploit
+IO
+shift-l
+get-head
+tumble
+rotate-l
+nop-A
+nop-C
+explore
+dec
+IO
+donate-res-to-deme
+if-less
+sense-resource0
+if-less

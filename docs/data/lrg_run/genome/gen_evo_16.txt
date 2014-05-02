@@ -1,0 +1,134 @@
+# Tue Apr 15 20:39:10 2014
+# Filename........: archive/113-aapey.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 113.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 113
+# Copied Size.....: 113
+# Executed Size...: 113
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+shift-l
+shift-r
+swap
+if-pheromone
+if-not-pheromone
+if-less
+if-less
+phero-off
+if-pheromone
+sense-pheromone
+swap-stk
+nop-C
+pop
+sense-faced-resource0
+dec
+sense-pheromone-faced
+phero-on
+if-resources
+sense-pheromone
+sense-resource0
+explore
+if-n-equ
+h-search
+pop
+swap-stk
+sense-faced-resource0
+phero-off
+if-label
+jmp-head
+set-flow
+jmp-head
+set-flow
+sense-pheromone
+swap
+sense-pheromone-faced
+exploit
+jmp-head
+shift-r
+exploit
+phero-off
+shift-l
+pop
+h-search
+if-n-equ
+exploit
+mov-head
+phero-off
+mov-head
+rotate-l
+inc
+sense-resource0
+if-less
+sub
+mov-head
+shift-l
+nop-B
+move
+dec
+pop
+rotate-r
+swap
+swap-stk
+move
+phero-off
+h-search
+add
+explore
+add
+add
+get-head
+rotate-l
+phero-on
+swap-stk
+sub
+if-resources
+nop-B
+if-pheromone
+tumble
+sense-pheromone-faced
+IO
+rotate-l
+phero-off
+swap-stk
+tumble
+swap
+sub
+if-resources
+sense-faced-resource0
+nop-A
+if-n-equ
+if-pheromone
+exploit
+exploit
+if-not-pheromone
+IO
+dec
+nop-B
+mov-head
+dec
+rotate-l
+tumble
+nop-A
+sense-resource0
+IO
+sense-faced-resource0
+push
+inc
+pop
+explore
+exploit
+if-pheromone
+push
+mov-head

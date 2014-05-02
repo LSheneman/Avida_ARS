@@ -1,0 +1,125 @@
+# Wed Apr 16 11:42:37 2014
+# Filename........: archive/104-aanbe.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 104.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 104
+# Copied Size.....: 104
+# Executed Size...: 104
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+sense-pheromone-faced
+rotate-l
+sense-pheromone
+rotate-l
+add
+sub
+explore
+move
+add
+nop-C
+if-resources
+sense-resource0
+push
+h-search
+if-not-pheromone
+rotate-r
+sense-pheromone-faced
+explore
+push
+rotate-l
+nop-A
+if-n-equ
+sub
+sense-faced-resource0
+shift-r
+pop
+push
+pop
+explore
+sense-pheromone
+get-head
+if-resources
+explore
+inc
+if-pheromone
+nop-B
+if-pheromone
+nand
+set-flow
+rotate-l
+exploit
+donate-res-to-deme
+exploit
+add
+explore
+sense-pheromone
+jmp-head
+if-not-pheromone
+if-resources
+tumble
+swap
+sense-resource0
+rotate-r
+sense-resource0
+mov-head
+tumble
+if-pheromone
+jmp-head
+shift-r
+h-search
+tumble
+IO
+push
+move
+tumble
+rotate-l
+nop-C
+dec
+shift-l
+explore
+move
+h-search
+exploit
+set-flow
+swap
+rotate-l
+push
+exploit
+explore
+get-head
+sense-pheromone-faced
+get-head
+jmp-head
+nop-C
+swap-stk
+exploit
+shift-l
+donate-res-to-deme
+IO
+phero-on
+if-resources
+if-less
+phero-off
+swap-stk
+rotate-r
+exploit
+shift-r
+IO
+rotate-r
+jmp-head
+sense-resource0
+if-not-pheromone
+nop-A
+jmp-head

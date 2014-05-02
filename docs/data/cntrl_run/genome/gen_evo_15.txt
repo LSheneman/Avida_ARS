@@ -1,0 +1,144 @@
+# Mon Apr  7 15:00:43 2014
+# Filename........: archive/123-abycv.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 123.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 123
+# Copied Size.....: 123
+# Executed Size...: 123
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+get-head
+if-pheromone
+if-pheromone
+if-n-equ
+donate-res-to-deme
+if-not-pheromone
+shift-l
+if-n-equ
+sub
+rotate-r
+swap
+IO
+sub
+sense-faced-resource0
+phero-off
+donate-res-to-deme
+pop
+nop-C
+pop
+sense-pheromone-faced
+sense-faced-resource0
+if-less
+mov-head
+get-head
+phero-off
+shift-r
+sense-pheromone-faced
+if-label
+push
+exploit
+sense-pheromone
+if-n-equ
+jmp-head
+h-search
+phero-off
+shift-r
+if-n-equ
+inc
+sub
+phero-on
+donate-res-to-deme
+move
+pop
+pop
+if-n-equ
+jmp-head
+rotate-l
+pop
+if-less
+dec
+sense-faced-resource0
+if-n-equ
+set-flow
+sense-pheromone-faced
+dec
+sense-faced-resource0
+shift-r
+exploit
+sense-pheromone-faced
+if-n-equ
+sub
+shift-l
+inc
+if-label
+dec
+nop-C
+rotate-l
+nop-B
+get-head
+exploit
+get-head
+get-head
+shift-r
+if-resources
+inc
+explore
+dec
+push
+explore
+jmp-head
+IO
+add
+explore
+push
+nop-B
+if-not-pheromone
+move
+shift-r
+explore
+swap
+phero-off
+if-less
+exploit
+sense-pheromone-faced
+rotate-l
+mov-head
+phero-off
+pop
+shift-l
+pop
+exploit
+explore
+sub
+add
+IO
+inc
+h-search
+IO
+exploit
+nop-C
+if-label
+phero-off
+move
+jmp-head
+exploit
+IO
+if-resources
+phero-on
+add
+donate-res-to-deme
+mov-head
+if-not-pheromone
+IO

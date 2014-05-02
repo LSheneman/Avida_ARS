@@ -1,0 +1,149 @@
+# Mon Apr  7 19:15:16 2014
+# Filename........: archive/128-acznw.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 128.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 128
+# Copied Size.....: 128
+# Executed Size...: 128
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+rotate-l
+if-less
+explore
+if-not-pheromone
+jmp-head
+shift-r
+nand
+donate-res-to-deme
+tumble
+if-pheromone
+tumble
+if-n-equ
+swap-stk
+donate-res-to-deme
+if-pheromone
+rotate-l
+nop-B
+if-not-pheromone
+if-pheromone
+rotate-r
+push
+swap
+swap-stk
+pop
+rotate-r
+sense-pheromone-faced
+phero-off
+if-n-equ
+IO
+donate-res-to-deme
+shift-l
+exploit
+sense-pheromone
+shift-r
+get-head
+jmp-head
+if-n-equ
+shift-r
+nop-C
+if-n-equ
+exploit
+shift-r
+rotate-r
+swap-stk
+pop
+if-not-pheromone
+move
+set-flow
+shift-l
+if-less
+dec
+nop-C
+push
+if-not-pheromone
+rotate-l
+phero-on
+tumble
+if-n-equ
+shift-l
+exploit
+sense-pheromone
+jmp-head
+IO
+nop-C
+add
+nop-B
+rotate-r
+if-n-equ
+set-flow
+explore
+sense-pheromone-faced
+if-resources
+nop-B
+if-n-equ
+jmp-head
+get-head
+sub
+nop-A
+if-n-equ
+nop-C
+sense-faced-resource0
+push
+if-pheromone
+add
+shift-l
+phero-off
+if-n-equ
+if-not-pheromone
+exploit
+if-less
+sense-faced-resource0
+tumble
+swap-stk
+shift-l
+jmp-head
+nand
+sense-resource0
+rotate-r
+if-n-equ
+pop
+set-flow
+nand
+if-less
+nand
+sense-faced-resource0
+swap-stk
+if-n-equ
+sense-pheromone-faced
+rotate-l
+move
+pop
+dec
+exploit
+rotate-l
+h-search
+IO
+exploit
+IO
+donate-res-to-deme
+phero-off
+nand
+if-resources
+phero-on
+move
+mov-head
+if-label
+nop-B
+phero-on

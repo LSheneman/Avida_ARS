@@ -1,0 +1,139 @@
+# Tue Apr  8 00:44:01 2014
+# Filename........: archive/118-abudc.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 118.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 118
+# Copied Size.....: 118
+# Executed Size...: 118
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+donate-res-to-deme
+if-label
+if-n-equ
+phero-on
+explore
+phero-off
+pop
+if-less
+if-n-equ
+sense-pheromone
+if-less
+phero-off
+sense-faced-resource0
+if-less
+if-less
+push
+nop-A
+if-resources
+add
+shift-l
+sense-resource0
+shift-r
+sub
+sense-pheromone
+phero-on
+if-less
+rotate-r
+nop-A
+if-resources
+if-pheromone
+inc
+phero-off
+exploit
+get-head
+if-label
+jmp-head
+phero-on
+rotate-r
+mov-head
+dec
+phero-on
+jmp-head
+move
+nand
+sense-resource0
+shift-r
+nop-A
+IO
+if-resources
+sense-pheromone-faced
+swap-stk
+inc
+swap-stk
+if-n-equ
+sense-pheromone
+sub
+tumble
+jmp-head
+shift-l
+swap
+jmp-head
+shift-l
+sense-pheromone
+exploit
+nop-A
+nop-A
+IO
+donate-res-to-deme
+explore
+jmp-head
+IO
+sense-resource0
+if-pheromone
+exploit
+nop-C
+nop-B
+explore
+donate-res-to-deme
+phero-off
+explore
+move
+exploit
+swap
+shift-r
+shift-l
+get-head
+add
+sense-pheromone
+push
+exploit
+if-pheromone
+mov-head
+swap-stk
+rotate-r
+rotate-r
+set-flow
+nop-A
+mov-head
+add
+nop-C
+if-resources
+if-not-pheromone
+swap-stk
+sub
+donate-res-to-deme
+donate-res-to-deme
+nand
+h-search
+tumble
+exploit
+IO
+if-resources
+set-flow
+mov-head
+shift-r
+nop-C
+set-flow
+if-label

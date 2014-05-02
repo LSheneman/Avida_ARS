@@ -1,0 +1,135 @@
+# Wed Apr 16 17:19:46 2014
+# Filename........: archive/114-aaxvw.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 114.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 114
+# Copied Size.....: 114
+# Executed Size...: 114
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+rotate-l
+exploit
+tumble
+shift-r
+rotate-l
+tumble
+nop-A
+sense-faced-resource0
+shift-l
+push
+set-flow
+tumble
+phero-off
+sense-faced-resource0
+h-search
+if-n-equ
+add
+exploit
+rotate-l
+shift-r
+explore
+IO
+mov-head
+rotate-r
+sense-resource0
+swap
+explore
+jmp-head
+jmp-head
+jmp-head
+if-less
+sense-resource0
+if-resources
+if-n-equ
+dec
+sub
+rotate-r
+if-pheromone
+nand
+set-flow
+if-resources
+nand
+get-head
+tumble
+rotate-l
+sense-resource0
+donate-res-to-deme
+shift-r
+add
+if-label
+sub
+swap-stk
+exploit
+nand
+jmp-head
+add
+jmp-head
+nop-C
+set-flow
+phero-on
+exploit
+set-flow
+nop-C
+pop
+explore
+phero-off
+sub
+rotate-r
+if-label
+nop-C
+swap-stk
+shift-l
+shift-r
+nop-B
+if-resources
+phero-off
+shift-r
+sense-resource0
+explore
+h-search
+swap-stk
+move
+nand
+sense-pheromone
+tumble
+nop-C
+h-search
+exploit
+phero-on
+mov-head
+shift-r
+if-label
+mov-head
+add
+donate-res-to-deme
+sense-faced-resource0
+jmp-head
+nand
+sense-faced-resource0
+h-search
+inc
+move
+nop-C
+shift-r
+explore
+phero-off
+tumble
+IO
+donate-res-to-deme
+mov-head
+inc
+nop-A
+sense-pheromone-faced
+tumble

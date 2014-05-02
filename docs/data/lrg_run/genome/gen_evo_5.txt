@@ -1,0 +1,122 @@
+# Wed Apr 16 15:59:46 2014
+# Filename........: archive/101-aaemi.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 101.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 101
+# Copied Size.....: 101
+# Executed Size...: 101
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+inc
+rotate-r
+rotate-r
+sense-faced-resource0
+sub
+if-label
+if-less
+inc
+swap
+if-not-pheromone
+dec
+push
+swap
+if-not-pheromone
+pop
+nop-C
+push
+if-resources
+pop
+push
+nop-A
+nop-C
+rotate-l
+IO
+swap
+swap-stk
+phero-off
+shift-l
+pop
+swap-stk
+donate-res-to-deme
+phero-off
+if-n-equ
+sense-pheromone-faced
+if-label
+if-less
+swap-stk
+exploit
+inc
+sense-faced-resource0
+sense-pheromone
+phero-on
+exploit
+if-less
+shift-l
+dec
+if-label
+jmp-head
+set-flow
+if-label
+get-head
+donate-res-to-deme
+nop-A
+IO
+sub
+if-less
+set-flow
+if-label
+sense-resource0
+sense-pheromone
+if-n-equ
+h-search
+mov-head
+IO
+sense-pheromone-faced
+sense-faced-resource0
+if-label
+rotate-l
+rotate-r
+swap-stk
+sense-pheromone
+rotate-l
+dec
+shift-l
+inc
+dec
+sense-pheromone-faced
+sense-pheromone
+sense-pheromone
+shift-l
+if-not-pheromone
+move
+h-search
+h-search
+if-resources
+if-n-equ
+pop
+sense-pheromone
+swap-stk
+add
+dec
+sense-resource0
+shift-l
+nop-A
+swap-stk
+push
+if-resources
+shift-l
+tumble
+inc
+mov-head

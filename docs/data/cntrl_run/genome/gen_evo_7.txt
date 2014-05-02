@@ -1,0 +1,114 @@
+# Mon Apr  7 02:50:35 2014
+# Filename........: archive/093-aazdz.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 93.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 93
+# Copied Size.....: 93
+# Executed Size...: 93
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+nand
+add
+donate-res-to-deme
+if-resources
+phero-off
+nand
+sense-pheromone-faced
+if-label
+h-search
+exploit
+exploit
+IO
+pop
+swap
+tumble
+pop
+rotate-r
+if-n-equ
+dec
+nop-A
+shift-l
+nop-A
+tumble
+phero-off
+sense-pheromone
+exploit
+donate-res-to-deme
+if-resources
+phero-on
+mov-head
+inc
+sub
+sense-pheromone-faced
+shift-l
+phero-off
+tumble
+dec
+exploit
+if-not-pheromone
+dec
+exploit
+sense-pheromone
+explore
+add
+add
+donate-res-to-deme
+swap-stk
+if-not-pheromone
+move
+nop-B
+jmp-head
+if-resources
+if-label
+tumble
+sense-pheromone-faced
+add
+if-less
+sub
+nop-B
+sense-pheromone
+if-n-equ
+shift-r
+mov-head
+get-head
+nop-C
+add
+jmp-head
+explore
+if-n-equ
+if-pheromone
+swap
+rotate-r
+mov-head
+swap-stk
+phero-on
+tumble
+explore
+dec
+inc
+pop
+nop-C
+nop-B
+sense-pheromone
+pop
+get-head
+IO
+tumble
+sense-pheromone
+set-flow
+if-label
+pop
+nop-A
+if-n-equ

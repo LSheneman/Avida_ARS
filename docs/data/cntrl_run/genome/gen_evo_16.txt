@@ -1,0 +1,152 @@
+# Sun Apr  6 23:28:36 2014
+# Filename........: archive/131-aabnc.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 131.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 131
+# Copied Size.....: 131
+# Executed Size...: 131
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+sense-faced-resource0
+tumble
+if-n-equ
+swap
+donate-res-to-deme
+IO
+nop-A
+phero-off
+phero-on
+shift-r
+rotate-r
+swap
+if-pheromone
+phero-off
+nop-A
+if-not-pheromone
+move
+donate-res-to-deme
+if-resources
+swap-stk
+rotate-r
+sense-resource0
+sense-resource0
+push
+h-search
+h-search
+if-pheromone
+sub
+sub
+swap-stk
+shift-l
+shift-r
+if-label
+rotate-l
+swap-stk
+tumble
+sense-resource0
+swap-stk
+nand
+if-not-pheromone
+phero-on
+if-less
+get-head
+sense-resource0
+IO
+add
+nand
+add
+sense-faced-resource0
+get-head
+sub
+jmp-head
+set-flow
+swap
+jmp-head
+rotate-r
+explore
+sense-faced-resource0
+sense-pheromone-faced
+if-n-equ
+sense-resource0
+sense-resource0
+dec
+nop-A
+pop
+move
+tumble
+add
+if-not-pheromone
+nop-B
+h-search
+phero-on
+push
+shift-r
+h-search
+if-resources
+explore
+if-pheromone
+shift-l
+phero-off
+set-flow
+donate-res-to-deme
+move
+donate-res-to-deme
+shift-l
+donate-res-to-deme
+swap-stk
+move
+rotate-r
+get-head
+explore
+jmp-head
+if-resources
+sub
+inc
+sense-faced-resource0
+add
+inc
+if-label
+pop
+tumble
+IO
+rotate-r
+move
+nop-A
+nop-C
+pop
+donate-res-to-deme
+set-flow
+h-search
+swap
+nop-A
+sub
+sense-resource0
+explore
+h-search
+move
+IO
+explore
+donate-res-to-deme
+IO
+nop-C
+mov-head
+if-label
+get-head
+rotate-l
+IO
+donate-res-to-deme
+exploit
+if-label
+if-not-pheromone

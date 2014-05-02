@@ -1,0 +1,177 @@
+# Sun Apr  6 22:45:44 2014
+# Filename........: archive/156-aauww.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 156.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 156
+# Copied Size.....: 156
+# Executed Size...: 156
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+sense-resource0
+swap
+nop-A
+dec
+sub
+sense-faced-resource0
+pop
+exploit
+exploit
+nop-A
+swap
+swap
+sense-resource0
+donate-res-to-deme
+sense-faced-resource0
+add
+donate-res-to-deme
+set-flow
+get-head
+sense-resource0
+move
+tumble
+get-head
+inc
+if-resources
+if-n-equ
+dec
+rotate-r
+rotate-l
+donate-res-to-deme
+shift-l
+rotate-l
+if-pheromone
+explore
+if-not-pheromone
+shift-l
+nop-B
+exploit
+if-n-equ
+IO
+jmp-head
+sense-faced-resource0
+if-resources
+phero-off
+rotate-r
+rotate-r
+set-flow
+if-label
+nop-A
+jmp-head
+push
+shift-r
+dec
+jmp-head
+if-n-equ
+inc
+if-n-equ
+donate-res-to-deme
+sense-resource0
+jmp-head
+rotate-l
+shift-r
+pop
+exploit
+rotate-l
+h-search
+IO
+if-pheromone
+pop
+sense-faced-resource0
+if-n-equ
+exploit
+exploit
+if-less
+if-pheromone
+add
+sub
+sense-resource0
+if-not-pheromone
+nand
+IO
+IO
+if-resources
+phero-on
+donate-res-to-deme
+sense-pheromone
+explore
+IO
+sense-resource0
+phero-off
+IO
+mov-head
+rotate-r
+if-resources
+nop-C
+sense-resource0
+sense-pheromone-faced
+tumble
+set-flow
+if-n-equ
+nop-C
+rotate-r
+swap
+if-resources
+set-flow
+tumble
+sense-resource0
+phero-off
+nand
+exploit
+dec
+h-search
+if-pheromone
+add
+add
+sense-resource0
+if-resources
+explore
+if-label
+sense-pheromone
+sub
+move
+IO
+sub
+inc
+shift-r
+sense-pheromone
+if-not-pheromone
+dec
+nop-B
+move
+nand
+dec
+push
+nop-A
+move
+sense-pheromone-faced
+move
+shift-r
+if-less
+push
+h-search
+nop-B
+if-resources
+pop
+phero-on
+phero-off
+h-search
+add
+swap-stk
+dec
+rotate-r
+shift-r
+if-pheromone
+rotate-l
+if-label

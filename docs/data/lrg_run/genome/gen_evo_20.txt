@@ -1,0 +1,134 @@
+# Wed Apr 16 16:25:21 2014
+# Filename........: archive/113-aacun.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 113.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 113
+# Copied Size.....: 113
+# Executed Size...: 113
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+add
+nop-C
+phero-on
+if-not-pheromone
+add
+sub
+inc
+nop-B
+if-pheromone
+shift-l
+sense-faced-resource0
+sense-pheromone
+dec
+if-label
+rotate-l
+push
+tumble
+phero-off
+h-search
+phero-off
+push
+if-not-pheromone
+rotate-r
+swap
+IO
+set-flow
+if-pheromone
+if-resources
+if-label
+nop-B
+h-search
+rotate-r
+get-head
+nop-A
+sense-pheromone
+if-less
+if-less
+exploit
+shift-r
+if-label
+move
+set-flow
+nop-B
+if-less
+if-less
+jmp-head
+inc
+dec
+tumble
+if-n-equ
+rotate-r
+explore
+sense-pheromone
+donate-res-to-deme
+swap-stk
+nop-A
+inc
+move
+dec
+get-head
+rotate-l
+IO
+donate-res-to-deme
+inc
+h-search
+nop-A
+inc
+donate-res-to-deme
+exploit
+if-label
+sense-pheromone-faced
+nop-A
+shift-r
+rotate-r
+tumble
+nop-A
+IO
+add
+if-pheromone
+sense-pheromone
+if-less
+nop-C
+sub
+explore
+nop-B
+sense-pheromone
+nop-C
+nop-B
+explore
+nop-B
+IO
+sense-resource0
+move
+IO
+h-search
+get-head
+push
+explore
+sense-faced-resource0
+push
+dec
+donate-res-to-deme
+set-flow
+jmp-head
+dec
+explore
+exploit
+tumble
+dec
+set-flow
+swap
+exploit
+add

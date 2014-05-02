@@ -1,0 +1,139 @@
+# Mon Apr  7 19:05:25 2014
+# Filename........: archive/118-aboin.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 118.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 118
+# Copied Size.....: 118
+# Executed Size...: 118
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+inc
+nop-B
+rotate-r
+if-pheromone
+push
+if-resources
+phero-on
+h-search
+nop-C
+explore
+if-resources
+jmp-head
+dec
+if-n-equ
+shift-r
+sense-resource0
+phero-on
+swap-stk
+phero-off
+mov-head
+move
+donate-res-to-deme
+push
+sense-pheromone-faced
+sense-pheromone
+IO
+mov-head
+sub
+move
+dec
+if-n-equ
+donate-res-to-deme
+nop-C
+swap
+shift-l
+swap-stk
+get-head
+phero-on
+explore
+IO
+if-pheromone
+shift-l
+h-search
+dec
+if-pheromone
+rotate-l
+IO
+rotate-r
+if-pheromone
+phero-off
+sense-resource0
+mov-head
+if-label
+if-n-equ
+phero-off
+inc
+tumble
+tumble
+get-head
+get-head
+rotate-l
+jmp-head
+add
+mov-head
+inc
+push
+push
+shift-r
+if-pheromone
+phero-on
+sense-resource0
+nand
+get-head
+sense-pheromone-faced
+shift-l
+get-head
+sub
+if-resources
+if-resources
+shift-r
+h-search
+phero-on
+if-pheromone
+add
+if-less
+sense-pheromone
+sense-faced-resource0
+set-flow
+if-not-pheromone
+explore
+inc
+mov-head
+inc
+move
+phero-on
+shift-r
+IO
+if-pheromone
+nand
+explore
+inc
+IO
+nop-A
+nop-A
+donate-res-to-deme
+move
+IO
+nand
+exploit
+IO
+if-pheromone
+mov-head
+if-pheromone
+shift-l
+rotate-l
+nop-A
+inc
+nop-C

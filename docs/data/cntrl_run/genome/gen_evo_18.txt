@@ -1,0 +1,137 @@
+# Mon Apr  7 06:59:51 2014
+# Filename........: archive/116-abawn.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 116.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 116
+# Copied Size.....: 116
+# Executed Size...: 116
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+get-head
+nand
+if-resources
+phero-on
+phero-on
+if-not-pheromone
+if-n-equ
+if-not-pheromone
+exploit
+shift-l
+inc
+shift-l
+if-pheromone
+get-head
+shift-l
+swap
+phero-on
+get-head
+jmp-head
+dec
+move
+rotate-l
+push
+swap-stk
+nop-A
+phero-on
+sense-pheromone
+h-search
+sense-pheromone
+phero-on
+pop
+phero-on
+sense-resource0
+sense-resource0
+get-head
+rotate-l
+jmp-head
+rotate-r
+phero-on
+jmp-head
+mov-head
+nop-A
+rotate-r
+phero-on
+move
+add
+sense-pheromone
+sub
+if-pheromone
+jmp-head
+if-pheromone
+phero-on
+rotate-r
+swap
+if-not-pheromone
+sense-pheromone-faced
+nop-A
+exploit
+inc
+IO
+inc
+shift-r
+nand
+if-label
+sense-pheromone-faced
+sense-pheromone
+set-flow
+sense-faced-resource0
+push
+push
+rotate-l
+shift-l
+rotate-r
+sense-faced-resource0
+exploit
+if-n-equ
+phero-off
+exploit
+shift-r
+if-resources
+phero-off
+nop-A
+shift-r
+push
+rotate-l
+phero-on
+sense-pheromone
+phero-off
+donate-res-to-deme
+push
+swap-stk
+dec
+sense-pheromone
+sense-pheromone-faced
+if-pheromone
+inc
+swap
+if-resources
+rotate-l
+exploit
+if-resources
+rotate-r
+rotate-r
+shift-l
+phero-off
+donate-res-to-deme
+push
+h-search
+explore
+rotate-l
+nop-A
+IO
+donate-res-to-deme
+mov-head
+if-label
+if-less

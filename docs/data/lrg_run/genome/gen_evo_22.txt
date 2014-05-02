@@ -1,0 +1,133 @@
+# Thu Apr 17 01:37:39 2014
+# Filename........: archive/112-aavwg.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 112.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 112
+# Copied Size.....: 112
+# Executed Size...: 112
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+if-not-pheromone
+if-not-pheromone
+rotate-l
+swap-stk
+swap-stk
+push
+sense-pheromone-faced
+get-head
+shift-l
+if-not-pheromone
+nand
+h-search
+donate-res-to-deme
+if-pheromone
+sense-pheromone-faced
+swap
+exploit
+if-not-pheromone
+phero-on
+shift-l
+sense-faced-resource0
+phero-off
+shift-r
+IO
+if-resources
+phero-on
+shift-r
+mov-head
+phero-off
+if-resources
+if-not-pheromone
+exploit
+shift-r
+add
+explore
+h-search
+swap-stk
+pop
+sense-pheromone-faced
+sense-pheromone
+explore
+if-label
+nop-B
+if-less
+if-label
+add
+swap
+exploit
+dec
+if-resources
+add
+sense-pheromone-faced
+push
+if-pheromone
+rotate-r
+rotate-l
+rotate-r
+set-flow
+exploit
+sense-resource0
+phero-off
+explore
+move
+sense-resource0
+phero-off
+get-head
+if-pheromone
+add
+if-not-pheromone
+donate-res-to-deme
+nop-A
+sense-pheromone-faced
+phero-on
+if-not-pheromone
+if-not-pheromone
+rotate-l
+if-not-pheromone
+if-resources
+phero-off
+donate-res-to-deme
+if-label
+nop-C
+exploit
+donate-res-to-deme
+if-n-equ
+IO
+rotate-l
+rotate-l
+push
+sense-faced-resource0
+shift-l
+sense-faced-resource0
+inc
+exploit
+set-flow
+jmp-head
+mov-head
+rotate-l
+phero-off
+exploit
+explore
+push
+inc
+exploit
+nop-A
+swap-stk
+explore
+if-n-equ
+mov-head
+sense-faced-resource0
+rotate-l
+add

@@ -1,0 +1,154 @@
+# Mon Apr  7 15:10:40 2014
+# Filename........: archive/133-aadna.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 133.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 133
+# Copied Size.....: 133
+# Executed Size...: 133
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+h-search
+nop-C
+shift-r
+pop
+sense-faced-resource0
+rotate-l
+if-resources
+donate-res-to-deme
+nop-B
+sub
+phero-off
+rotate-r
+explore
+mov-head
+nand
+get-head
+sense-faced-resource0
+explore
+tumble
+exploit
+sense-resource0
+if-n-equ
+sense-faced-resource0
+inc
+sense-pheromone-faced
+if-n-equ
+if-n-equ
+shift-r
+jmp-head
+inc
+donate-res-to-deme
+if-label
+sense-pheromone
+get-head
+pop
+if-n-equ
+if-not-pheromone
+sub
+exploit
+sub
+if-less
+pop
+swap-stk
+rotate-r
+add
+nop-A
+IO
+phero-off
+donate-res-to-deme
+if-less
+tumble
+sense-pheromone-faced
+sense-faced-resource0
+nop-C
+if-label
+if-less
+add
+shift-r
+get-head
+get-head
+rotate-l
+if-resources
+phero-on
+pop
+explore
+exploit
+jmp-head
+rotate-l
+rotate-r
+tumble
+pop
+inc
+if-label
+rotate-r
+sense-faced-resource0
+sense-pheromone-faced
+jmp-head
+phero-off
+if-resources
+nop-C
+if-pheromone
+inc
+push
+nop-C
+sub
+shift-l
+set-flow
+if-pheromone
+sense-resource0
+nop-C
+nand
+pop
+sub
+nop-C
+phero-off
+get-head
+nop-A
+add
+if-resources
+get-head
+move
+phero-on
+dec
+phero-off
+rotate-r
+nop-B
+if-not-pheromone
+if-not-pheromone
+get-head
+move
+phero-off
+inc
+rotate-l
+if-pheromone
+swap
+jmp-head
+swap
+dec
+move
+sense-pheromone
+if-pheromone
+h-search
+tumble
+h-search
+nop-C
+tumble
+dec
+IO
+sense-resource0
+sub
+if-less
+exploit
+mov-head

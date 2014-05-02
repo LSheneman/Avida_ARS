@@ -1,0 +1,133 @@
+# Wed Apr 16 06:47:47 2014
+# Filename........: archive/112-aakhl.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 112.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 112
+# Copied Size.....: 112
+# Executed Size...: 112
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+dec
+tumble
+sub
+sense-pheromone
+rotate-l
+sense-pheromone
+phero-off
+IO
+if-resources
+if-pheromone
+push
+set-flow
+explore
+if-resources
+phero-on
+shift-l
+shift-l
+set-flow
+if-pheromone
+tumble
+move
+nop-C
+nop-B
+shift-r
+sub
+if-resources
+nop-C
+inc
+if-not-pheromone
+swap-stk
+IO
+jmp-head
+sense-faced-resource0
+swap
+get-head
+phero-on
+if-less
+if-label
+phero-off
+if-pheromone
+nop-C
+if-label
+jmp-head
+if-label
+sense-pheromone
+sense-faced-resource0
+nop-A
+shift-l
+if-n-equ
+rotate-l
+tumble
+shift-r
+nop-C
+nop-B
+set-flow
+sub
+get-head
+sense-pheromone
+sub
+exploit
+phero-off
+set-flow
+sense-pheromone-faced
+if-pheromone
+phero-on
+sub
+if-resources
+if-label
+add
+set-flow
+add
+sub
+if-resources
+mov-head
+tumble
+mov-head
+sub
+nop-C
+swap
+sense-pheromone
+if-resources
+shift-r
+donate-res-to-deme
+phero-off
+get-head
+if-less
+if-resources
+if-less
+sense-pheromone
+nop-B
+tumble
+if-resources
+get-head
+nop-B
+if-not-pheromone
+donate-res-to-deme
+add
+shift-l
+if-label
+h-search
+IO
+explore
+IO
+if-resources
+set-flow
+swap-stk
+exploit
+mov-head
+get-head
+exploit
+if-n-equ
+if-n-equ

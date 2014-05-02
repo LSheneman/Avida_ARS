@@ -1,0 +1,155 @@
+# Mon Apr  7 06:23:40 2014
+# Filename........: archive/134-aagni.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 134.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 134
+# Copied Size.....: 134
+# Executed Size...: 134
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+swap-stk
+h-search
+IO
+donate-res-to-deme
+shift-l
+sense-resource0
+nand
+swap-stk
+sense-resource0
+swap-stk
+rotate-r
+shift-r
+pop
+IO
+dec
+add
+jmp-head
+if-pheromone
+phero-on
+if-n-equ
+explore
+shift-r
+shift-r
+sub
+sense-resource0
+phero-off
+if-resources
+add
+if-resources
+push
+if-not-pheromone
+tumble
+nand
+rotate-r
+if-resources
+shift-l
+nand
+sense-pheromone-faced
+dec
+sub
+sub
+sense-pheromone-faced
+sense-pheromone
+dec
+inc
+sense-pheromone-faced
+push
+add
+nop-B
+swap
+add
+rotate-r
+if-less
+donate-res-to-deme
+if-pheromone
+sub
+rotate-r
+rotate-r
+rotate-l
+push
+nop-A
+donate-res-to-deme
+if-pheromone
+move
+sense-pheromone
+sense-resource0
+sense-faced-resource0
+jmp-head
+if-less
+inc
+set-flow
+move
+sense-pheromone-faced
+IO
+get-head
+if-label
+tumble
+get-head
+nop-A
+swap-stk
+swap
+nop-B
+add
+swap-stk
+pop
+tumble
+tumble
+exploit
+nop-B
+if-n-equ
+pop
+move
+push
+nand
+nop-A
+sense-pheromone
+shift-l
+pop
+if-resources
+if-not-pheromone
+shift-r
+tumble
+nop-A
+move
+push
+shift-r
+if-resources
+exploit
+sense-pheromone-faced
+nop-C
+shift-l
+sense-pheromone
+if-n-equ
+IO
+sense-pheromone-faced
+if-n-equ
+move
+get-head
+if-label
+h-search
+move
+rotate-l
+nop-C
+nop-B
+nop-C
+IO
+sense-faced-resource0
+explore
+donate-res-to-deme
+IO
+mov-head
+dec
+swap-stk
+inc

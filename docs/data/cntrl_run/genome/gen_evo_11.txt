@@ -1,0 +1,136 @@
+# Sun Apr  6 23:34:00 2014
+# Filename........: archive/115-abawr.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 115.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 115
+# Copied Size.....: 115
+# Executed Size...: 115
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+jmp-head
+nop-A
+phero-on
+if-pheromone
+add
+h-search
+sub
+explore
+if-resources
+nand
+rotate-l
+sense-faced-resource0
+dec
+sub
+sense-resource0
+donate-res-to-deme
+add
+if-label
+h-search
+if-n-equ
+sense-faced-resource0
+sense-resource0
+swap
+explore
+shift-r
+shift-l
+move
+h-search
+get-head
+sense-pheromone
+shift-l
+h-search
+sub
+inc
+sub
+if-label
+rotate-l
+h-search
+shift-r
+nop-C
+if-resources
+push
+sub
+sense-resource0
+add
+sense-resource0
+dec
+if-resources
+jmp-head
+donate-res-to-deme
+get-head
+exploit
+dec
+sense-faced-resource0
+nand
+nop-B
+nop-B
+if-pheromone
+phero-off
+move
+swap-stk
+if-resources
+pop
+exploit
+if-not-pheromone
+shift-r
+get-head
+if-not-pheromone
+dec
+if-not-pheromone
+if-not-pheromone
+h-search
+tumble
+rotate-l
+shift-l
+if-not-pheromone
+h-search
+if-resources
+nop-C
+get-head
+nop-B
+get-head
+nand
+dec
+sense-resource0
+swap
+phero-on
+swap-stk
+shift-l
+jmp-head
+nop-C
+sense-resource0
+add
+exploit
+move
+nop-C
+sense-pheromone-faced
+swap-stk
+sense-resource0
+shift-r
+if-label
+swap-stk
+donate-res-to-deme
+shift-l
+pop
+h-search
+donate-res-to-deme
+move
+IO
+explore
+IO
+move
+mov-head
+if-pheromone
+sense-faced-resource0

@@ -1,0 +1,147 @@
+# Wed Apr 16 13:44:38 2014
+# Filename........: archive/126-aakem.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 126.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 126
+# Copied Size.....: 126
+# Executed Size...: 126
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+set-flow
+if-n-equ
+pop
+add
+explore
+sense-pheromone-faced
+swap
+sense-resource0
+push
+dec
+sense-resource0
+explore
+sense-resource0
+move
+set-flow
+sense-pheromone
+if-not-pheromone
+phero-on
+swap
+nop-B
+explore
+explore
+tumble
+if-less
+push
+swap-stk
+shift-l
+dec
+pop
+IO
+if-label
+push
+tumble
+swap
+if-pheromone
+shift-r
+if-pheromone
+sense-resource0
+sub
+explore
+swap-stk
+rotate-r
+nand
+mov-head
+nop-C
+nop-C
+get-head
+nop-B
+if-label
+sense-pheromone-faced
+rotate-r
+if-label
+move
+h-search
+nop-A
+shift-r
+nop-A
+nop-B
+pop
+IO
+sense-resource0
+phero-off
+jmp-head
+shift-r
+sense-resource0
+h-search
+if-label
+inc
+if-resources
+nand
+if-resources
+explore
+inc
+phero-on
+nop-A
+move
+if-resources
+shift-l
+if-label
+if-n-equ
+swap-stk
+jmp-head
+tumble
+h-search
+inc
+sense-resource0
+inc
+phero-on
+sense-resource0
+move
+add
+h-search
+tumble
+sub
+jmp-head
+rotate-r
+sense-pheromone
+if-n-equ
+nop-B
+sense-pheromone-faced
+sense-pheromone-faced
+add
+add
+sense-pheromone
+jmp-head
+exploit
+phero-off
+if-resources
+rotate-r
+sense-pheromone
+if-label
+h-search
+move
+sense-faced-resource0
+IO
+explore
+if-less
+rotate-l
+IO
+pop
+donate-res-to-deme
+mov-head
+phero-on
+nand
+phero-off
+if-pheromone

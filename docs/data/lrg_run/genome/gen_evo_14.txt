@@ -1,0 +1,139 @@
+# Thu Apr 17 04:25:07 2014
+# Filename........: archive/118-aazig.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 118.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 118
+# Copied Size.....: 118
+# Executed Size...: 118
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+sense-resource0
+swap
+rotate-r
+phero-on
+donate-res-to-deme
+nand
+nop-A
+swap
+phero-off
+shift-l
+sense-faced-resource0
+shift-r
+nop-C
+exploit
+if-less
+exploit
+phero-off
+nand
+exploit
+pop
+push
+swap-stk
+swap
+if-not-pheromone
+rotate-l
+if-pheromone
+sub
+explore
+exploit
+set-flow
+swap-stk
+sense-faced-resource0
+inc
+exploit
+shift-r
+h-search
+get-head
+if-n-equ
+rotate-r
+swap
+dec
+h-search
+move
+get-head
+h-search
+sense-pheromone
+swap-stk
+add
+swap
+push
+jmp-head
+nop-C
+swap-stk
+if-pheromone
+if-label
+nop-A
+tumble
+sense-resource0
+pop
+nand
+sense-pheromone-faced
+IO
+IO
+if-n-equ
+exploit
+swap-stk
+rotate-l
+inc
+IO
+swap
+push
+add
+push
+set-flow
+if-label
+move
+donate-res-to-deme
+sense-pheromone-faced
+nop-B
+donate-res-to-deme
+explore
+nand
+nop-A
+add
+phero-on
+set-flow
+if-not-pheromone
+sub
+move
+push
+exploit
+h-search
+swap
+sense-resource0
+shift-r
+sense-resource0
+sense-pheromone-faced
+h-search
+tumble
+get-head
+sense-faced-resource0
+get-head
+exploit
+rotate-l
+h-search
+IO
+rotate-l
+explore
+move
+sense-resource0
+swap
+IO
+donate-res-to-deme
+move
+mov-head
+if-resources
+if-n-equ
+sense-pheromone-faced

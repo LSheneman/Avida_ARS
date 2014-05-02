@@ -1,0 +1,136 @@
+# Wed Apr 16 12:05:45 2014
+# Filename........: archive/115-aarrk.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 115.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 115
+# Copied Size.....: 115
+# Executed Size...: 115
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+shift-r
+nop-C
+inc
+move
+set-flow
+IO
+move
+sub
+nand
+sub
+donate-res-to-deme
+sub
+pop
+sense-pheromone
+rotate-l
+sense-pheromone
+get-head
+pop
+sense-pheromone-faced
+if-resources
+sense-resource0
+tumble
+if-resources
+rotate-l
+h-search
+nop-C
+h-search
+IO
+sense-pheromone
+pop
+nand
+shift-r
+nop-C
+rotate-l
+sense-pheromone
+tumble
+nop-C
+sense-pheromone-faced
+if-n-equ
+sub
+shift-l
+explore
+swap
+sub
+move
+if-pheromone
+h-search
+dec
+sub
+sense-pheromone
+exploit
+if-resources
+explore
+phero-on
+nop-A
+nand
+if-resources
+if-not-pheromone
+if-pheromone
+exploit
+nop-A
+shift-r
+jmp-head
+add
+exploit
+move
+swap
+phero-on
+if-pheromone
+add
+swap-stk
+swap-stk
+add
+phero-off
+nop-B
+shift-l
+sense-faced-resource0
+explore
+h-search
+if-less
+pop
+if-less
+pop
+if-pheromone
+add
+if-not-pheromone
+rotate-l
+jmp-head
+sub
+rotate-l
+if-n-equ
+get-head
+sub
+sense-resource0
+nop-A
+phero-on
+if-n-equ
+get-head
+if-pheromone
+h-search
+if-less
+mov-head
+sense-pheromone
+nop-C
+sub
+explore
+IO
+move
+IO
+donate-res-to-deme
+push
+explore
+mov-head
+nop-A
+explore

@@ -1,0 +1,148 @@
+# Mon Apr  7 15:34:27 2014
+# Filename........: archive/127-aaiue.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 127.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 127
+# Copied Size.....: 127
+# Executed Size...: 127
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+h-search
+nop-C
+get-head
+rotate-r
+rotate-r
+sense-pheromone
+rotate-r
+get-head
+jmp-head
+jmp-head
+if-less
+sub
+if-n-equ
+donate-res-to-deme
+dec
+shift-r
+if-label
+swap-stk
+exploit
+move
+rotate-r
+mov-head
+sense-pheromone-faced
+pop
+if-not-pheromone
+sense-pheromone
+if-not-pheromone
+tumble
+rotate-l
+set-flow
+if-n-equ
+shift-l
+set-flow
+sub
+sense-pheromone
+tumble
+inc
+set-flow
+sub
+nop-C
+jmp-head
+shift-r
+sense-pheromone-faced
+nop-C
+explore
+swap
+swap-stk
+exploit
+sub
+move
+sense-faced-resource0
+move
+add
+nop-B
+add
+add
+mov-head
+if-n-equ
+explore
+pop
+h-search
+explore
+mov-head
+nop-A
+sense-resource0
+rotate-l
+shift-l
+explore
+if-less
+sense-resource0
+explore
+sense-pheromone-faced
+IO
+phero-on
+donate-res-to-deme
+set-flow
+swap-stk
+push
+shift-r
+if-not-pheromone
+sense-pheromone
+h-search
+push
+IO
+get-head
+set-flow
+swap
+if-resources
+exploit
+nop-A
+exploit
+shift-l
+sense-pheromone-faced
+rotate-r
+get-head
+nop-A
+if-pheromone
+swap-stk
+if-resources
+nop-C
+pop
+donate-res-to-deme
+pop
+shift-r
+donate-res-to-deme
+sub
+sense-faced-resource0
+exploit
+add
+dec
+add
+move
+h-search
+exploit
+explore
+move
+IO
+donate-res-to-deme
+mov-head
+swap-stk
+shift-r
+nand
+sub
+nop-B
+jmp-head
+phero-on
+if-resources

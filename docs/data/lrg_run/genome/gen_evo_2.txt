@@ -1,0 +1,131 @@
+# Wed Apr 16 02:20:48 2014
+# Filename........: archive/110-aatuu.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 110.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 110
+# Copied Size.....: 110
+# Executed Size...: 110
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+donate-res-to-deme
+phero-on
+add
+if-resources
+if-label
+swap
+shift-l
+if-not-pheromone
+jmp-head
+if-label
+phero-on
+phero-off
+sense-pheromone
+explore
+h-search
+IO
+sub
+sense-resource0
+if-less
+rotate-r
+inc
+dec
+get-head
+exploit
+IO
+if-resources
+phero-on
+sense-pheromone
+if-n-equ
+move
+pop
+exploit
+nop-B
+rotate-l
+nop-B
+if-n-equ
+donate-res-to-deme
+if-n-equ
+push
+sub
+donate-res-to-deme
+if-label
+mov-head
+sense-pheromone
+shift-r
+sense-faced-resource0
+if-n-equ
+if-label
+mov-head
+push
+swap-stk
+sub
+if-pheromone
+push
+pop
+jmp-head
+sense-resource0
+IO
+if-less
+get-head
+exploit
+rotate-r
+get-head
+swap
+sense-pheromone
+if-n-equ
+tumble
+jmp-head
+shift-r
+tumble
+nop-A
+inc
+phero-off
+sense-resource0
+explore
+if-not-pheromone
+if-n-equ
+rotate-l
+phero-off
+dec
+move
+explore
+if-n-equ
+sense-pheromone-faced
+nop-C
+nop-C
+rotate-l
+dec
+rotate-r
+sense-pheromone
+add
+dec
+inc
+h-search
+sense-resource0
+add
+dec
+shift-r
+set-flow
+swap-stk
+sense-resource0
+phero-off
+nand
+swap-stk
+if-resources
+if-less
+nop-B
+explore
+tumble
+inc

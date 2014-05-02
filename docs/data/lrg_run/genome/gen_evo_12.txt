@@ -1,0 +1,149 @@
+# Wed Apr 16 18:34:16 2014
+# Filename........: archive/128-aajxr.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 128.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 128
+# Copied Size.....: 128
+# Executed Size...: 128
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+nand
+rotate-r
+sense-pheromone-faced
+sense-resource0
+nop-C
+if-n-equ
+if-n-equ
+if-not-pheromone
+if-resources
+if-less
+nop-C
+exploit
+pop
+if-less
+set-flow
+rotate-l
+nand
+nop-B
+if-pheromone
+IO
+pop
+inc
+sense-resource0
+sense-faced-resource0
+shift-r
+nop-A
+nop-A
+inc
+if-resources
+phero-on
+donate-res-to-deme
+move
+nand
+h-search
+rotate-r
+phero-off
+exploit
+if-resources
+get-head
+set-flow
+pop
+sense-pheromone
+sub
+if-n-equ
+phero-off
+swap-stk
+rotate-l
+IO
+shift-l
+nand
+if-less
+if-label
+IO
+shift-r
+push
+pop
+nop-C
+nand
+nop-A
+sub
+get-head
+nop-A
+nop-C
+if-less
+pop
+donate-res-to-deme
+move
+h-search
+tumble
+exploit
+nand
+nop-C
+nop-A
+add
+sub
+IO
+set-flow
+rotate-r
+if-pheromone
+sense-pheromone-faced
+get-head
+push
+sense-pheromone-faced
+move
+if-not-pheromone
+sense-pheromone
+IO
+sense-pheromone-faced
+phero-off
+shift-l
+exploit
+push
+if-n-equ
+if-not-pheromone
+mov-head
+if-pheromone
+pop
+nand
+push
+if-not-pheromone
+nop-A
+sub
+nop-C
+nop-A
+h-search
+swap-stk
+set-flow
+shift-l
+if-resources
+nop-C
+h-search
+set-flow
+exploit
+IO
+shift-l
+swap-stk
+jmp-head
+if-n-equ
+pop
+IO
+rotate-l
+if-pheromone
+set-flow
+push
+exploit
+if-pheromone
+push
+add

@@ -1,0 +1,155 @@
+# Mon Apr  7 10:40:01 2014
+# Filename........: archive/134-aajar.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 134.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 134
+# Copied Size.....: 134
+# Executed Size...: 134
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+inc
+push
+sense-faced-resource0
+if-pheromone
+sense-faced-resource0
+if-pheromone
+move
+nand
+rotate-l
+swap-stk
+h-search
+set-flow
+rotate-r
+nand
+exploit
+shift-r
+sense-faced-resource0
+exploit
+nand
+phero-on
+push
+nop-C
+sub
+if-resources
+exploit
+phero-off
+explore
+if-not-pheromone
+set-flow
+shift-l
+rotate-l
+phero-off
+if-not-pheromone
+nop-A
+swap
+set-flow
+nand
+tumble
+donate-res-to-deme
+get-head
+if-less
+set-flow
+rotate-r
+sub
+sense-faced-resource0
+pop
+if-not-pheromone
+move
+sub
+move
+dec
+nop-B
+phero-on
+nop-B
+get-head
+shift-r
+get-head
+set-flow
+donate-res-to-deme
+pop
+sense-pheromone-faced
+move
+jmp-head
+sense-faced-resource0
+pop
+exploit
+sense-pheromone
+phero-on
+if-less
+h-search
+if-pheromone
+sense-pheromone-faced
+h-search
+pop
+pop
+explore
+if-n-equ
+h-search
+mov-head
+if-less
+move
+exploit
+set-flow
+shift-l
+sense-pheromone-faced
+if-less
+phero-on
+mov-head
+nand
+push
+swap
+exploit
+IO
+if-pheromone
+shift-r
+nand
+dec
+shift-l
+if-label
+shift-l
+rotate-l
+tumble
+explore
+sense-faced-resource0
+h-search
+pop
+tumble
+rotate-r
+swap
+rotate-r
+add
+if-resources
+IO
+donate-res-to-deme
+IO
+if-resources
+IO
+nop-C
+get-head
+phero-off
+get-head
+donate-res-to-deme
+rotate-l
+nop-C
+h-search
+rotate-l
+nop-A
+shift-r
+donate-res-to-deme
+explore
+IO
+mov-head
+mov-head
+swap

@@ -1,0 +1,158 @@
+# Mon Apr  7 22:25:49 2014
+# Filename........: archive/137-abjqm.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 137.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 137
+# Copied Size.....: 137
+# Executed Size...: 137
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+dec
+pop
+get-head
+if-resources
+swap-stk
+sense-resource0
+donate-res-to-deme
+phero-off
+if-pheromone
+phero-off
+shift-l
+if-less
+push
+rotate-r
+phero-off
+sense-resource0
+get-head
+explore
+shift-l
+if-n-equ
+donate-res-to-deme
+tumble
+exploit
+sense-pheromone
+sense-faced-resource0
+IO
+nop-B
+shift-l
+phero-off
+sense-pheromone-faced
+if-n-equ
+pop
+move
+set-flow
+phero-on
+phero-off
+exploit
+phero-on
+nop-C
+sense-resource0
+inc
+IO
+donate-res-to-deme
+IO
+get-head
+rotate-l
+if-resources
+move
+sub
+IO
+phero-off
+pop
+nop-A
+swap-stk
+if-less
+tumble
+mov-head
+phero-on
+tumble
+push
+donate-res-to-deme
+shift-r
+shift-l
+donate-res-to-deme
+get-head
+mov-head
+swap-stk
+if-label
+nop-A
+set-flow
+sense-resource0
+nop-A
+sense-pheromone
+donate-res-to-deme
+if-not-pheromone
+nand
+rotate-l
+if-resources
+nop-A
+get-head
+exploit
+swap-stk
+jmp-head
+h-search
+rotate-l
+if-pheromone
+swap-stk
+shift-r
+nop-B
+if-label
+if-not-pheromone
+nand
+phero-off
+shift-l
+if-n-equ
+nand
+exploit
+sub
+inc
+shift-r
+donate-res-to-deme
+swap-stk
+if-not-pheromone
+sense-pheromone
+exploit
+sense-faced-resource0
+inc
+if-resources
+pop
+dec
+nop-C
+push
+mov-head
+dec
+phero-off
+nop-A
+if-less
+sub
+add
+add
+rotate-r
+h-search
+if-n-equ
+phero-off
+phero-on
+add
+if-less
+mov-head
+get-head
+shift-l
+if-not-pheromone
+IO
+swap
+sense-pheromone-faced
+exploit
+if-pheromone
+sense-pheromone-faced

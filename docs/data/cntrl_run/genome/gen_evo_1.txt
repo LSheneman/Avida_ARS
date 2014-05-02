@@ -1,0 +1,185 @@
+# Sun Apr  6 17:00:29 2014
+# Filename........: archive/164-aarjj.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 164.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 164
+# Copied Size.....: 164
+# Executed Size...: 164
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+rotate-l
+shift-r
+h-search
+nop-A
+mov-head
+if-resources
+if-less
+phero-off
+sub
+swap
+exploit
+if-not-pheromone
+donate-res-to-deme
+h-search
+h-search
+mov-head
+dec
+if-not-pheromone
+sub
+push
+nop-C
+IO
+set-flow
+phero-on
+add
+get-head
+if-resources
+tumble
+if-less
+sense-faced-resource0
+phero-on
+donate-res-to-deme
+dec
+rotate-r
+move
+get-head
+get-head
+move
+donate-res-to-deme
+exploit
+inc
+move
+dec
+explore
+nand
+phero-off
+nop-C
+swap-stk
+nand
+nand
+sub
+sense-resource0
+if-n-equ
+inc
+if-less
+if-resources
+sense-resource0
+add
+if-not-pheromone
+sub
+donate-res-to-deme
+phero-on
+if-less
+if-pheromone
+nand
+if-less
+swap-stk
+if-not-pheromone
+if-not-pheromone
+shift-r
+push
+sense-faced-resource0
+swap
+mov-head
+tumble
+swap
+IO
+jmp-head
+move
+inc
+sense-resource0
+sense-pheromone
+swap
+if-resources
+if-n-equ
+exploit
+rotate-r
+phero-on
+phero-on
+explore
+nand
+push
+mov-head
+inc
+if-less
+phero-on
+swap
+nand
+shift-r
+sense-pheromone-faced
+dec
+phero-on
+nand
+sense-resource0
+sense-pheromone-faced
+h-search
+exploit
+sense-pheromone
+explore
+sense-pheromone-faced
+nop-A
+exploit
+if-label
+swap
+inc
+explore
+jmp-head
+move
+exploit
+swap
+move
+set-flow
+rotate-r
+if-resources
+inc
+tumble
+h-search
+donate-res-to-deme
+if-n-equ
+sense-pheromone-faced
+if-resources
+push
+shift-l
+set-flow
+sub
+if-less
+rotate-l
+if-less
+push
+nop-B
+if-resources
+phero-on
+move
+exploit
+IO
+donate-res-to-deme
+mov-head
+if-less
+h-search
+sub
+mov-head
+sense-faced-resource0
+if-n-equ
+push
+nand
+mov-head
+sense-pheromone
+swap
+if-not-pheromone
+push
+h-search
+push
+sense-resource0
+sense-resource0

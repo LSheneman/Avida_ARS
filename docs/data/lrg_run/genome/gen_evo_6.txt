@@ -1,0 +1,154 @@
+# Wed Apr 16 21:26:04 2014
+# Filename........: archive/133-aaish.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 133.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 133
+# Copied Size.....: 133
+# Executed Size...: 133
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+donate-res-to-deme
+phero-off
+dec
+donate-res-to-deme
+get-head
+dec
+add
+nop-C
+get-head
+add
+sense-resource0
+get-head
+sense-resource0
+rotate-r
+rotate-l
+add
+sense-resource0
+sense-faced-resource0
+push
+nop-B
+if-n-equ
+if-resources
+h-search
+move
+shift-l
+nop-B
+set-flow
+sub
+dec
+if-not-pheromone
+tumble
+donate-res-to-deme
+donate-res-to-deme
+rotate-r
+move
+sense-pheromone-faced
+nop-C
+set-flow
+nop-A
+if-pheromone
+get-head
+pop
+get-head
+explore
+rotate-l
+sense-pheromone-faced
+add
+nop-B
+if-less
+exploit
+pop
+push
+phero-off
+sense-faced-resource0
+dec
+move
+dec
+nop-C
+if-resources
+inc
+IO
+jmp-head
+shift-r
+nop-C
+sense-pheromone
+tumble
+if-label
+exploit
+nand
+if-n-equ
+inc
+sense-pheromone-faced
+shift-l
+sense-pheromone
+if-label
+get-head
+phero-off
+shift-l
+add
+move
+nand
+sense-faced-resource0
+swap
+if-n-equ
+nop-B
+phero-off
+inc
+sub
+phero-on
+add
+inc
+explore
+if-pheromone
+exploit
+if-n-equ
+tumble
+donate-res-to-deme
+if-less
+rotate-l
+sense-faced-resource0
+rotate-l
+donate-res-to-deme
+move
+pop
+if-pheromone
+if-resources
+if-less
+get-head
+tumble
+swap-stk
+shift-r
+move
+tumble
+swap-stk
+swap-stk
+IO
+if-label
+donate-res-to-deme
+sub
+rotate-r
+if-resources
+tumble
+shift-l
+explore
+rotate-r
+h-search
+explore
+IO
+swap-stk
+explore
+IO
+donate-res-to-deme
+mov-head

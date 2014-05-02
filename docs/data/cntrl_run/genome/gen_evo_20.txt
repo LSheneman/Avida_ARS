@@ -1,0 +1,169 @@
+# Mon Apr  7 14:26:02 2014
+# Filename........: archive/148-aafcm.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 148.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 148
+# Copied Size.....: 148
+# Executed Size...: 148
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+phero-on
+explore
+h-search
+sub
+nand
+set-flow
+if-resources
+inc
+push
+get-head
+if-resources
+jmp-head
+inc
+shift-l
+move
+exploit
+rotate-l
+sense-resource0
+rotate-l
+rotate-r
+sense-pheromone-faced
+if-n-equ
+rotate-r
+if-pheromone
+jmp-head
+add
+if-resources
+if-resources
+if-label
+explore
+if-less
+if-resources
+if-n-equ
+pop
+move
+sense-faced-resource0
+if-not-pheromone
+h-search
+sense-faced-resource0
+add
+shift-l
+sense-faced-resource0
+get-head
+sense-pheromone-faced
+get-head
+if-not-pheromone
+if-resources
+h-search
+add
+shift-r
+if-n-equ
+add
+move
+phero-on
+if-less
+swap-stk
+dec
+explore
+pop
+sense-faced-resource0
+dec
+swap
+exploit
+get-head
+if-label
+inc
+dec
+dec
+donate-res-to-deme
+nand
+nop-A
+push
+add
+if-label
+if-pheromone
+push
+if-resources
+if-not-pheromone
+sense-resource0
+tumble
+if-n-equ
+if-label
+move
+shift-l
+inc
+h-search
+sense-pheromone
+tumble
+h-search
+if-resources
+if-resources
+if-less
+if-n-equ
+jmp-head
+add
+donate-res-to-deme
+mov-head
+nop-B
+rotate-r
+set-flow
+exploit
+exploit
+tumble
+move
+nop-C
+move
+nop-A
+move
+swap
+sense-pheromone
+rotate-r
+push
+IO
+nop-B
+nop-B
+sense-resource0
+set-flow
+rotate-l
+sub
+sense-resource0
+sense-pheromone-faced
+push
+pop
+if-not-pheromone
+set-flow
+jmp-head
+sense-resource0
+get-head
+shift-l
+tumble
+if-less
+tumble
+phero-off
+if-not-pheromone
+add
+nand
+dec
+get-head
+h-search
+explore
+rotate-l
+IO
+move
+IO
+donate-res-to-deme
+mov-head
+sense-faced-resource0
+phero-on

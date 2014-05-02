@@ -1,0 +1,131 @@
+# Wed Apr 16 06:36:18 2014
+# Filename........: archive/110-aajne.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 110.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 110
+# Copied Size.....: 110
+# Executed Size...: 110
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+if-pheromone
+shift-l
+if-resources
+nop-B
+tumble
+explore
+if-resources
+if-less
+sense-resource0
+if-resources
+if-pheromone
+rotate-l
+sense-resource0
+phero-off
+set-flow
+donate-res-to-deme
+inc
+nop-A
+IO
+explore
+add
+swap-stk
+h-search
+if-n-equ
+shift-r
+phero-off
+donate-res-to-deme
+add
+if-n-equ
+if-less
+sense-pheromone-faced
+phero-off
+shift-l
+get-head
+sense-resource0
+rotate-l
+jmp-head
+shift-r
+explore
+inc
+get-head
+exploit
+explore
+push
+set-flow
+nand
+get-head
+nop-B
+tumble
+if-n-equ
+get-head
+shift-r
+dec
+if-pheromone
+if-label
+get-head
+dec
+sense-resource0
+swap-stk
+if-label
+phero-on
+exploit
+nop-A
+shift-l
+phero-on
+nand
+tumble
+nop-B
+jmp-head
+swap-stk
+donate-res-to-deme
+if-pheromone
+push
+sub
+if-not-pheromone
+get-head
+phero-off
+sense-pheromone-faced
+tumble
+shift-r
+phero-off
+swap-stk
+explore
+if-label
+nand
+rotate-l
+sense-pheromone
+swap-stk
+shift-l
+if-pheromone
+h-search
+sub
+if-less
+nand
+sense-resource0
+jmp-head
+donate-res-to-deme
+if-n-equ
+move
+sense-pheromone
+jmp-head
+set-flow
+rotate-l
+exploit
+phero-off
+IO
+donate-res-to-deme
+mov-head
+nop-A
+tumble

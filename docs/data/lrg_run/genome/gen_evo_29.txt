@@ -1,0 +1,143 @@
+# Wed Apr 16 22:29:49 2014
+# Filename........: archive/122-aabwy.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 122.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 122
+# Copied Size.....: 122
+# Executed Size...: 122
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+sense-resource0
+nop-A
+if-label
+rotate-r
+if-less
+move
+explore
+dec
+rotate-l
+nop-B
+if-not-pheromone
+phero-on
+nop-A
+swap-stk
+sense-pheromone
+phero-off
+rotate-r
+nop-B
+nop-C
+if-n-equ
+if-not-pheromone
+swap-stk
+dec
+inc
+swap-stk
+exploit
+add
+IO
+if-resources
+if-less
+if-less
+sub
+nand
+exploit
+phero-off
+sense-pheromone-faced
+shift-l
+nop-C
+move
+rotate-l
+rotate-l
+rotate-r
+if-not-pheromone
+phero-on
+pop
+push
+exploit
+if-n-equ
+get-head
+sense-resource0
+nop-C
+h-search
+nop-A
+nop-B
+h-search
+sense-pheromone
+jmp-head
+shift-l
+nop-B
+h-search
+sub
+push
+nop-C
+tumble
+rotate-l
+push
+nop-A
+add
+push
+if-resources
+if-pheromone
+sub
+dec
+get-head
+sub
+if-not-pheromone
+donate-res-to-deme
+sense-pheromone-faced
+move
+rotate-r
+mov-head
+get-head
+nop-B
+add
+tumble
+pop
+IO
+rotate-l
+set-flow
+nand
+rotate-l
+if-less
+pop
+nop-B
+phero-off
+pop
+sense-resource0
+shift-l
+sense-faced-resource0
+set-flow
+add
+mov-head
+exploit
+sub
+if-pheromone
+rotate-r
+phero-on
+if-label
+exploit
+dec
+h-search
+tumble
+pop
+explore
+if-pheromone
+donate-res-to-deme
+IO
+IO
+push
+mov-head
+move
+if-pheromone

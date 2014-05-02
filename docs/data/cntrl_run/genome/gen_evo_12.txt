@@ -1,0 +1,186 @@
+# Mon Apr  7 03:08:49 2014
+# Filename........: archive/165-aadbm.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 165.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 165
+# Copied Size.....: 165
+# Executed Size...: 165
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+exploit
+if-label
+move
+sub
+swap
+shift-r
+pop
+shift-r
+move
+h-search
+sub
+sense-faced-resource0
+set-flow
+nand
+get-head
+rotate-l
+sense-resource0
+get-head
+get-head
+if-not-pheromone
+if-less
+pop
+exploit
+if-not-pheromone
+inc
+donate-res-to-deme
+tumble
+nop-A
+phero-on
+donate-res-to-deme
+rotate-l
+pop
+phero-on
+nop-B
+jmp-head
+if-label
+phero-off
+phero-off
+if-pheromone
+get-head
+nop-B
+mov-head
+nand
+h-search
+exploit
+move
+dec
+get-head
+set-flow
+phero-on
+rotate-r
+mov-head
+nop-B
+get-head
+if-resources
+exploit
+phero-off
+jmp-head
+tumble
+sense-pheromone
+add
+set-flow
+if-resources
+nop-B
+dec
+explore
+sense-faced-resource0
+add
+exploit
+exploit
+push
+swap-stk
+swap
+inc
+nop-A
+nop-A
+pop
+donate-res-to-deme
+explore
+exploit
+get-head
+rotate-l
+jmp-head
+IO
+swap
+donate-res-to-deme
+if-n-equ
+move
+jmp-head
+phero-on
+if-resources
+h-search
+IO
+shift-l
+rotate-r
+nop-C
+if-less
+sense-faced-resource0
+donate-res-to-deme
+nop-B
+if-not-pheromone
+if-not-pheromone
+mov-head
+move
+if-resources
+pop
+if-pheromone
+h-search
+rotate-l
+rotate-l
+sense-pheromone-faced
+shift-l
+dec
+sub
+move
+rotate-l
+exploit
+IO
+set-flow
+exploit
+IO
+phero-on
+if-resources
+swap
+nop-A
+pop
+if-label
+nand
+donate-res-to-deme
+rotate-r
+sense-pheromone
+add
+mov-head
+sub
+sub
+sense-pheromone
+move
+push
+rotate-l
+sense-resource0
+shift-l
+if-not-pheromone
+donate-res-to-deme
+donate-res-to-deme
+pop
+jmp-head
+pop
+phero-on
+sense-resource0
+rotate-r
+rotate-l
+tumble
+if-less
+explore
+mov-head
+exploit
+if-label
+push
+sense-pheromone
+nop-A
+set-flow
+h-search
+if-resources
+swap-stk
+shift-l

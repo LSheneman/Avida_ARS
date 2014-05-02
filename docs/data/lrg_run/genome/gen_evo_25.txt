@@ -1,0 +1,141 @@
+# Wed Apr 16 01:55:50 2014
+# Filename........: archive/120-aafso.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 120.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 120
+# Copied Size.....: 120
+# Executed Size...: 120
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+explore
+push
+if-not-pheromone
+if-n-equ
+sense-resource0
+sense-resource0
+if-label
+IO
+phero-off
+sub
+nop-B
+if-less
+IO
+rotate-r
+phero-off
+if-n-equ
+if-label
+jmp-head
+sub
+sense-pheromone
+sense-pheromone
+sub
+sense-pheromone
+swap
+sense-resource0
+tumble
+phero-off
+get-head
+IO
+if-less
+if-less
+if-less
+add
+shift-r
+phero-off
+jmp-head
+swap
+move
+if-resources
+shift-r
+IO
+h-search
+shift-l
+nop-A
+shift-r
+shift-r
+if-n-equ
+sub
+h-search
+swap
+move
+jmp-head
+push
+jmp-head
+nop-C
+nop-A
+phero-on
+nop-B
+jmp-head
+sense-faced-resource0
+if-pheromone
+add
+if-not-pheromone
+add
+h-search
+tumble
+sense-pheromone
+nop-C
+sub
+push
+swap
+nand
+shift-r
+if-less
+shift-r
+shift-l
+pop
+get-head
+rotate-l
+tumble
+sense-resource0
+IO
+explore
+exploit
+push
+sense-pheromone
+add
+shift-r
+inc
+nand
+exploit
+tumble
+if-n-equ
+nop-C
+shift-l
+dec
+rotate-l
+phero-off
+exploit
+shift-r
+IO
+set-flow
+IO
+shift-l
+phero-on
+sense-pheromone
+donate-res-to-deme
+dec
+nop-A
+swap-stk
+swap-stk
+sense-faced-resource0
+nop-B
+swap
+jmp-head
+phero-off
+swap
+shift-r
+nand
+push

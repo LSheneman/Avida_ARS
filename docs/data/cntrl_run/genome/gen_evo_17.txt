@@ -1,0 +1,151 @@
+# Mon Apr  7 03:09:30 2014
+# Filename........: archive/130-aahwx.org
+# Update Output...: 250000
+# Is Viable.......: 0
+# Repro Cycle Size: 0
+# Depth to Viable.: -1
+# 
+# Generation: 0
+# Merit...........: 130.000000
+# Gestation Time..: 0
+# Fitness.........: 0.000000
+# Errors..........: 0
+# Genome Size.....: 130
+# Copied Size.....: 130
+# Executed Size...: 130
+# Offspring.......: NONE
+# 
+# Tasks Performed:
+# dontcare 0 (0.000000)
+
+
+swap
+shift-l
+jmp-head
+swap
+rotate-r
+nop-B
+sense-pheromone
+sub
+rotate-l
+add
+if-less
+rotate-r
+phero-on
+sub
+shift-r
+sense-pheromone-faced
+phero-off
+phero-off
+pop
+pop
+nop-A
+if-n-equ
+sense-pheromone-faced
+sense-pheromone-faced
+if-label
+if-label
+pop
+swap
+rotate-r
+move
+if-not-pheromone
+sense-pheromone
+jmp-head
+phero-off
+exploit
+if-n-equ
+move
+add
+sub
+pop
+h-search
+if-resources
+if-label
+if-pheromone
+sub
+if-not-pheromone
+push
+if-n-equ
+nop-A
+tumble
+nop-C
+inc
+exploit
+IO
+if-resources
+phero-on
+if-resources
+tumble
+shift-r
+IO
+if-less
+get-head
+exploit
+IO
+swap-stk
+donate-res-to-deme
+if-resources
+if-less
+sense-pheromone
+set-flow
+swap-stk
+sense-pheromone-faced
+if-n-equ
+nop-C
+shift-l
+dec
+jmp-head
+if-label
+swap
+swap
+pop
+dec
+dec
+rotate-l
+IO
+h-search
+shift-r
+rotate-r
+if-resources
+if-label
+phero-off
+h-search
+set-flow
+set-flow
+sense-resource0
+inc
+sense-pheromone
+push
+if-pheromone
+dec
+swap
+if-resources
+if-n-equ
+if-less
+exploit
+swap
+nop-A
+inc
+exploit
+if-not-pheromone
+jmp-head
+swap
+shift-l
+swap-stk
+shift-r
+move
+swap-stk
+pop
+tumble
+h-search
+nop-B
+rotate-l
+dec
+sense-faced-resource0
+shift-r
+if-not-pheromone
+phero-off
+rotate-l
+if-label
+mov-head
