@@ -4,7 +4,7 @@ Set up Avida:
 
 Download the source code by executing the following for commands:
 	
-	$ git clone https://github.com/devosoft/avida.git
+	$ git clone https://github.com/LSheneman/avida.git
 	$ cd avida
 	$ git submodule init
 	$ git submodule update
